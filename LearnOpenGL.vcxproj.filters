@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\From BOOK Solution">
+      <UniqueIdentifier>{1b85fdb4-6c19-45f9-90af-bfa07b9b892c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BOOK">
+      <UniqueIdentifier>{9d99c0ab-1f4b-46fd-a2e8-11f18e4a6cb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\other">
+      <UniqueIdentifier>{d7ff13de-bcf8-4279-b8d7-83a907a25b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\other\5.8">
+      <UniqueIdentifier>{b8fdba36-a860-4d75-b816-9c6889d1702a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\other\6.8">
+      <UniqueIdentifier>{4fddeb43-f9d9-464c-93fa-9a5d57568bdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\From BOOK Solution\5.8">
+      <UniqueIdentifier>{1329822c-ab0d-47ef-b643-e6f8e62ea983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\From BOOK Solution\6.8">
+      <UniqueIdentifier>{97d02758-053b-4704-b66f-828370afe4f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\other\7.8">
+      <UniqueIdentifier>{2be8bee8-3418-473d-9f78-2ec9da5747c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\From BOOK Solution\7.8">
+      <UniqueIdentifier>{c07cd442-4a5d-473b-acff-0698b85441c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader">
+      <UniqueIdentifier>{a58a3630-6faf-418b-aac9-2161bdc22d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\From BOOK Solution\8.19">
+      <UniqueIdentifier>{afcc1487-fec5-44fd-8195-78a69a705726}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Source Files\From BOOK Solution</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BeforeShadeClassLearning.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
+    <ClCompile Include="FileName.cpp">
+      <Filter>Source Files\other</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise2and3.cpp">
+      <Filter>Source Files\other\5.8</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise1.cpp">
+      <Filter>Source Files\other\5.8</Filter>
+    </ClCompile>
+    <ClCompile Include="Exerices1.cpp">
+      <Filter>Source Files\From BOOK Solution\5.8</Filter>
+    </ClCompile>
+    <ClCompile Include="Exerices2.cpp">
+      <Filter>Source Files\From BOOK Solution\5.8</Filter>
+    </ClCompile>
+    <ClCompile Include="Exerices3.cpp">
+      <Filter>Source Files\From BOOK Solution\5.8</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise1_6.8.cpp">
+      <Filter>Source Files\other\6.8</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise2_6.8.cpp">
+      <Filter>Source Files\other\6.8</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise3_6.8.cpp">
+      <Filter>Source Files\other\6.8</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageLoader.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderClassUse.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise1_7.8.cpp">
+      <Filter>Source Files\other\7.8</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise2_7.8.cpp">
+      <Filter>Source Files\other\7.8</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise3_7.8.cpp">
+      <Filter>Source Files\other\7.8</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise4_7.8.cpp">
+      <Filter>Source Files\other\7.8</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorTransformation.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
+    <ClCompile Include="UsingGlmLibrary.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise2_8.19.cpp">
+      <Filter>Source Files\From BOOK Solution\8.19</Filter>
+    </ClCompile>
+    <ClCompile Include="CoordinateSystem.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingCubeFirst.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader.h">
+      <Filter>Source Files\BOOK</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercise2_6.8.h">
+      <Filter>Source Files\From BOOK Solution\6.8</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercise3_6.8.h">
+      <Filter>Source Files\From BOOK Solution\6.8</Filter>
+    </ClInclude>
+    <ClInclude Include="Exerciese1_7.8.h">
+      <Filter>Source Files\From BOOK Solution\7.8</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercies2_7.8.h">
+      <Filter>Source Files\From BOOK Solution\7.8</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercise3_7.8.h">
+      <Filter>Source Files\From BOOK Solution\7.8</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercise4_7.8.h">
+      <Filter>Source Files\From BOOK Solution\7.8</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="FragmentShader.frag">
+      <Filter>Resource Files\Shader</Filter>
+    </Text>
+    <Text Include="VertexShaderWithTransform.vert">
+      <Filter>Resource Files\Shader</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exercise1_6.8.h">
+      <Filter>Source Files\From BOOK Solution\6.8</Filter>
+    </None>
+    <None Include="VertexShader.vert">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="VertexShaderCoordinateSystem.vert">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="FragmentShaderCoordinateSystem.frag">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>
