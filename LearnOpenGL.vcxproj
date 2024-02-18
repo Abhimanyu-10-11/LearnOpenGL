@@ -133,6 +133,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="allExercise.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CoordinateSystem.cpp" />
     <ClCompile Include="Exercise1_6.8.cpp" />
     <ClCompile Include="Exercise1.cpp" />
@@ -152,6 +154,7 @@
     <ClCompile Include="Exercise2_6.8.cpp" />
     <ClCompile Include="ImageLoader.cpp" />
     <ClCompile Include="LoadingCubeFirst.cpp" />
+    <ClCompile Include="MultipleCube.cpp" />
     <ClCompile Include="ShaderClassUse.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Triangle.cpp" />
@@ -162,6 +165,7 @@
     <ClInclude Include="Exercies2_7.8.h" />
     <ClInclude Include="Exerciese1_7.8.h" />
     <ClInclude Include="Exercise2_6.8.h" />
+    <ClInclude Include="Exercise3.h" />
     <ClInclude Include="Exercise3_6.8.h" />
     <ClInclude Include="Exercise3_7.8.h" />
     <ClInclude Include="Exercise4_7.8.h" />

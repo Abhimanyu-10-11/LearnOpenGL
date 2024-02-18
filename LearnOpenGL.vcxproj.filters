@@ -46,6 +46,12 @@
     <Filter Include="Source Files\From BOOK Solution\8.19">
       <UniqueIdentifier>{afcc1487-fec5-44fd-8195-78a69a705726}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\other\9.9">
+      <UniqueIdentifier>{08df4863-eb35-4564-a147-f6bae150c7ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\From BOOK Solution\9.9">
+      <UniqueIdentifier>{e0f1b222-3717-4ab2-823d-98a501f3a9e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Triangle.cpp">
@@ -120,6 +126,15 @@
     <ClCompile Include="LoadingCubeFirst.cpp">
       <Filter>Source Files\BOOK</Filter>
     </ClCompile>
+    <ClCompile Include="MultipleCube.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
+    <ClCompile Include="allExercise.cpp">
+      <Filter>Source Files\other\9.9</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -142,6 +157,9 @@
     </ClInclude>
     <ClInclude Include="Exercise4_7.8.h">
       <Filter>Source Files\From BOOK Solution\7.8</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercise3.h">
+      <Filter>Source Files\From BOOK Solution\9.9</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

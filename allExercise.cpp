@@ -1,3 +1,12 @@
+////9.9 Exercises
+////• Try experimenting with the FoV and aspect - ratio parameters of GLM’s projection
+////function.See if you can figure out how those affect the perspective frustum.
+////• Play with the view matrix by translating in several directions and see how the scene changes.
+////Think of the view matrix as a camera object.
+////• Try to make every 3rd container(including the 1st) rotate over time, while leaving the other
+////containers static using just the model matrix.Solution: / src / 1.getting_started / 6.
+////4.coordinate_systems_exercise3 / .
+//	
 //#include<glad/glad.h>
 //#include<GLFW/glfw3.h>
 //#include<glm/glm.hpp>
@@ -98,7 +107,7 @@
 //			0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
 //			-0.5f, 0.5f, 0.5f, 0.0f, 0.0f,
 //			-0.5f, 0.5f, -0.5f, 0.0f, 1.0f
-//	
+//
 //	};
 //
 //	unsigned int indices[] =
@@ -158,17 +167,28 @@
 //
 //	stbi_image_free(data);
 //
+//	glm::vec3 cubePositions[] = {
+//			glm::vec3(0.0f, 0.0f, 0.0f),
+//			glm::vec3(2.0f, 5.0f, -15.0f),
+//			glm::vec3(-1.5f, -2.2f, -2.5f),
+//			glm::vec3(-3.8f, -2.0f, -12.3f),
+//			glm::vec3(2.4f, -0.4f, -3.5f),
+//			glm::vec3(-1.7f, 3.0f, -7.5f),
+//			glm::vec3(1.3f, -2.0f, -2.5f),
+//			glm::vec3(1.5f, 2.0f, -2.5f),
+//			glm::vec3(1.5f, 0.2f, -1.5f),
+//			glm::vec3(-1.3f, 1.0f, -1.5f)
+//	};
+//
 //	glUniform1i(glGetUniformLocation(shader.ID, "texture1"), 0);
 //
-//	glm::mat4 model, view, projection = glm::mat4(1.0f);
-//	model = glm::rotate(model,(float)glfwGetTime()* glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+//	glm::mat4  view, projection = glm::mat4(1.0f);
 //
 //	view = glm::translate(view, glm::vec3(0, 0, -3.0f));
 //
 //	projection = glm::perspective(glm::radians(45.0f), windowWidht / windowHeight, 0.1f, 100.0f);
 //
 //	shader.use();
-//	glUniformMatrix4fv(glGetUniformLocation(shader.ID, "model"), 1, GL_FALSE, glm::value_ptr(model));
 //	glUniformMatrix4fv(glGetUniformLocation(shader.ID, "view"), 1, GL_FALSE, glm::value_ptr(view));
 //	glUniformMatrix4fv(glGetUniformLocation(shader.ID, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
 //
@@ -177,16 +197,35 @@
 //	while (!glfwWindowShouldClose(window))
 //	{
 //		handleInput(window);
-//		glClearColor(0.2f, 0.3f, 0.3f, 0.5f);
-//		glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+//		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+//		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 //		shader.use();
-//		model = glm::rotate(model, (float)glfwGetTime() * glm::radians(-0.00050f), glm::vec3(1.0f, 1.0f, 0.5f));
-//		glUniformMatrix4fv(glGetUniformLocation(shader.ID, "model"), 1, GL_FALSE, glm::value_ptr(model));
-//
 //		glBindTexture(GL_TEXTURE_2D, texture);
 //		glBindVertexArray(VAO);
-//		glDrawArrays(GL_TRIANGLES, 0, 36);
-//		//glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+//		for (unsigned int i = 0; i < 10; i++)
+//		{
+//			glm::mat4 model = glm::mat4(1.0f);
+//			model = glm::translate(model, cubePositions[i]);
+//			if (i % 3 == 0)
+//			{
+//
+//				float angle = 20.0f * i;
+//				if (i == 0)
+//				{
+//					angle = 20.0f;
+//				}
+//				model = glm::rotate(model, (float)glfwGetTime() * glm::radians(angle),
+//					glm::vec3(1.0f, 0.3f, 0.5f));
+//
+//			}
+//			glUniformMatrix4fv(glGetUniformLocation(shader.ID, "model"), 1, GL_FALSE, glm::value_ptr(model));
+//			glDrawArrays(GL_TRIANGLES, 0, 36);
+//		}
+//		view = glm::translate(view, glm::vec3(0, 0, -sin((float)glfwGetTime() * 0.0001)));
+//
+//		//view = glm::rotate(view, glm::radians(.05f), glm::vec3(0.0, 1.0f, 0.0f));
+//		glUniformMatrix4fv(glGetUniformLocation(shader.ID, "view"), 1, GL_FALSE, glm::value_ptr(view));
+//
 //		glfwSwapBuffers(window);
 //		glfwPollEvents();
 //	}
