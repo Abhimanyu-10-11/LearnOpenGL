@@ -135,6 +135,21 @@
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files\BOOK</Filter>
     </ClCompile>
+    <ClCompile Include="RotatingCameraInCircle.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
+    <ClCompile Include="WalkAround.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
+    <ClCompile Include="DeltaTime.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
+    <ClCompile Include="ZoomRotatingCamara.cpp">
+      <Filter>Source Files\BOOK</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraRotationAndZoom.cpp">
+      <Filter>Source Files\From BOOK Solution</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">

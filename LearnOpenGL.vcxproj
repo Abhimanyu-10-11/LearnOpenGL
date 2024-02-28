@@ -135,7 +135,9 @@
   <ItemGroup>
     <ClCompile Include="allExercise.cpp" />
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraRotationAndZoom.cpp" />
     <ClCompile Include="CoordinateSystem.cpp" />
+    <ClCompile Include="DeltaTime.cpp" />
     <ClCompile Include="Exercise1_6.8.cpp" />
     <ClCompile Include="Exercise1.cpp" />
     <ClCompile Include="Exercise1_7.8.cpp" />
@@ -155,11 +157,14 @@
     <ClCompile Include="ImageLoader.cpp" />
     <ClCompile Include="LoadingCubeFirst.cpp" />
     <ClCompile Include="MultipleCube.cpp" />
+    <ClCompile Include="ZoomRotatingCamara.cpp" />
+    <ClCompile Include="RotatingCameraInCircle.cpp" />
     <ClCompile Include="ShaderClassUse.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Triangle.cpp" />
     <ClCompile Include="UsingGlmLibrary.cpp" />
     <ClCompile Include="VectorTransformation.cpp" />
+    <ClCompile Include="WalkAround.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercies2_7.8.h" />

@@ -9,8 +9,6 @@
 //using namespace std;
 //
 //
-//float zCameraPos = 3.0f;
-//glm::vec3 cameraPosition = glm::vec3(0, 0, zCameraPos);
 //
 //void setFrameBufferSizeCallback(GLFWwindow* window, int width, int height)
 //{
@@ -30,11 +28,7 @@
 //	{
 //		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 //	}
-//	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-//	{
-//		zCameraPos+=0.01;
-//		cameraPosition = glm::vec3(0, 0, zCameraPos);
-//	}
+//	
 //}
 //
 //
@@ -47,8 +41,8 @@
 //	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 //	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 //	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-//	float windowWidht = 800;
-//	float windowHeight = 800;
+//	float windowWidht = 800.0f;
+//	float windowHeight = 800.0f;
 //	GLFWwindow* window = glfwCreateWindow(windowWidht, windowHeight, "Testing", NULL, NULL);
 //	if (window == NULL)
 //	{
@@ -69,35 +63,30 @@
 //			0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
 //			-0.5f, 0.5f, -0.5f, 0.0f, 1.0f,
 //			-0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
-//
 //			-0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
 //			0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
 //			0.5f, 0.5f, 0.5f, 1.0f, 1.0f,
 //			0.5f, 0.5f, 0.5f, 1.0f, 1.0f,
 //			-0.5f, 0.5f, 0.5f, 0.0f, 1.0f,
 //			-0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-//
 //			-0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
 //			-0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
 //			-0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
 //			-0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
 //			-0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
 //			-0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-//
 //			0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
 //			0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
 //			0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
 //			0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
 //			0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
 //			0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-//
 //			-0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
 //			0.5f, -0.5f, -0.5f, 1.0f, 1.0f,
 //			0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
 //			0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
 //			-0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
 //			-0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-//
 //			-0.5f, 0.5f, -0.5f, 0.0f, 1.0f,
 //			0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
 //			0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
@@ -180,7 +169,9 @@
 //	glUniform1i(glGetUniformLocation(shader.ID, "texture1"), 0);
 //
 //
-//	
+//
+//
+//	glm::vec3 cameraPosition = glm::vec3(0, 0, 0);
 //	glm::vec3 cameraTarget = glm::vec3(0, 0, 0);
 //	glm::vec3 cameraDirection = glm::normalize(cameraPosition - cameraTarget);
 //	glm::vec3 up = glm::vec3(0, 1.0f, 0);
@@ -225,16 +216,20 @@
 //		shader.use();
 //		glBindTexture(GL_TEXTURE_2D, texture);
 //		glBindVertexArray(VAO);
+//		float radius = 10.0f;
+//		double camX = sin(glfwGetTime()) * radius;
+//		double camZ = cos(glfwGetTime() )* radius;
+//		cameraPosition = glm::vec3(camX, 0.0, camZ);
 //		view = glm::lookAt(cameraPosition, cameraTarget, up);
 //		glUniformMatrix4fv(glGetUniformLocation(shader.ID, "view"), 1, GL_FALSE, glm::value_ptr(view));
+//		
+//
+//
 //		for (unsigned int i = 0; i < 10; i++)
 //		{
 //			glm::mat4 model = glm::mat4(1.0f);
 //			model = glm::translate(model, cubePositions[i]);
-//			/*if (i == 0)
-//			{
-//				model = glm::scale(model, glm::vec3(0.01, 0.01, 0.01));
-//			}*/
+//	
 //			if (i % 3 == 0)
 //			{
 //				float angle = 20.0f * i;	
