@@ -135,6 +135,7 @@
   <ItemGroup>
     <ClCompile Include="allExercise.cpp" />
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="LearningCamera.cpp" />
     <ClCompile Include="CameraRotationAndZoom.cpp" />
     <ClCompile Include="CoordinateSystem.cpp" />
     <ClCompile Include="DeltaTime.cpp" />
@@ -167,6 +168,7 @@
     <ClCompile Include="WalkAround.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Exercies2_7.8.h" />
     <ClInclude Include="Exerciese1_7.8.h" />
     <ClInclude Include="Exercise2_6.8.h" />

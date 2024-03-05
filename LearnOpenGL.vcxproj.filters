@@ -132,7 +132,7 @@
     <ClCompile Include="allExercise.cpp">
       <Filter>Source Files\other\9.9</Filter>
     </ClCompile>
-    <ClCompile Include="Camera.cpp">
+    <ClCompile Include="LearningCamera.cpp">
       <Filter>Source Files\BOOK</Filter>
     </ClCompile>
     <ClCompile Include="RotatingCameraInCircle.cpp">
@@ -150,11 +150,11 @@
     <ClCompile Include="CameraRotationAndZoom.cpp">
       <Filter>Source Files\From BOOK Solution</Filter>
     </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Shader.h">
-      <Filter>Source Files\BOOK</Filter>
-    </ClInclude>
     <ClInclude Include="Exercise2_6.8.h">
       <Filter>Source Files\From BOOK Solution\6.8</Filter>
     </ClInclude>
@@ -175,6 +175,12 @@
     </ClInclude>
     <ClInclude Include="Exercise3.h">
       <Filter>Source Files\From BOOK Solution\9.9</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
