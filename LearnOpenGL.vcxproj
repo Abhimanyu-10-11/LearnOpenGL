@@ -109,7 +109,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>assimp-vc143-mtd.lib;glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ProjectDir)\linking\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -135,6 +135,7 @@
   <ItemGroup>
     <ClCompile Include="allExercise.cpp" />
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Excerise1_13.7.cpp" />
     <ClCompile Include="LearningCamera.cpp" />
     <ClCompile Include="CameraRotationAndZoom.cpp" />
     <ClCompile Include="CoordinateSystem.cpp" />
@@ -156,7 +157,13 @@
     <ClCompile Include="BeforeShadeClassLearning.cpp" />
     <ClCompile Include="Exercise2_6.8.cpp" />
     <ClCompile Include="ImageLoader.cpp" />
+    <ClCompile Include="LightCaster.cpp" />
+    <ClCompile Include="Lighting.cpp" />
+    <ClCompile Include="Lightingmap.cpp" />
     <ClCompile Include="LoadingCubeFirst.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MeshLoding.cpp" />
     <ClCompile Include="MultipleCube.cpp" />
     <ClCompile Include="ZoomRotatingCamara.cpp" />
     <ClCompile Include="RotatingCameraInCircle.cpp" />
@@ -176,6 +183,7 @@
     <ClInclude Include="Exercise3_6.8.h" />
     <ClInclude Include="Exercise3_7.8.h" />
     <ClInclude Include="Exercise4_7.8.h" />
+    <ClInclude Include="Mesh.h" />
     <ClInclude Include="Shader.h" />
   </ItemGroup>
   <ItemGroup>
@@ -184,7 +192,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Exercise1_6.8.h" />
+    <None Include="FragmentLighting.frag" />
+    <None Include="FragmentLightingMap.frag" />
+    <None Include="FragmentLightObject.frag" />
     <None Include="FragmentShaderCoordinateSystem.frag" />
+    <None Include="FragmentShaderMaterial.frag" />
+    <None Include="VertexLighting.vert" />
+    <None Include="VertexLightingMap.vert" />
     <None Include="VertexShader.vert" />
     <None Include="VertexShaderCoordinateSystem.vert" />
   </ItemGroup>

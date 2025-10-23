@@ -3,6 +3,7 @@
 #define SHADER_H
 
 #include<glad/glad.h>
+#include<glm/glm.hpp>
 
 #include<string>
 #include<fstream>
@@ -26,6 +27,8 @@ public:
 	void setInt(const std::string &name,int value) const;
 	void setFloat(const std::string &name,float value) const;
 	void setMat4(const std::string& name, glm::mat4 mat) const;
+	void setTexture(const std::string& name, unsigned int texture) const;
+	void setVec3(const std::string& name, glm::vec3 vec) const;
 
 };
 
@@ -135,4 +138,16 @@ inline void Shader::setMat4(const std::string& name, glm::mat4 mat) const
 {
 	glUniformMatrix4fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, glm::value_ptr(mat));
 
+}
+
+inline void Shader::setTexture(const std::string& name, unsigned int texture) const
+{
+	glUniform1i(glGetUniformLocation(ID, name.c_str()), texture);
+
+}
+
+inline void Shader::setVec3(const std::string& name, glm::vec3 vec) const
+{
+
+	glUniform3fv(glGetUniformLocation(ID, name.c_str()), 1, glm::value_ptr(vec));
 }

@@ -52,6 +52,30 @@
     <Filter Include="Source Files\From BOOK Solution\9.9">
       <UniqueIdentifier>{e0f1b222-3717-4ab2-823d-98a501f3a9e7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\BOOK\Lighting">
+      <UniqueIdentifier>{95f73da6-273e-45af-952b-7295d6f45caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BOOK\Basics">
+      <UniqueIdentifier>{6a91b557-fd9c-4136-a280-d0450c42ba5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\other\13.7">
+      <UniqueIdentifier>{6f6ea602-6d60-4930-8e0b-332a08e6e364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BOOK\Material">
+      <UniqueIdentifier>{e2bd799f-ef1b-499c-bf64-082a3cebfee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader\LightingMap">
+      <UniqueIdentifier>{b46cf859-a94a-4737-b85c-258f8200c9a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader\LightCaster">
+      <UniqueIdentifier>{8dc2f871-3760-4b6c-ba20-12c5ee96af79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BOOK\MeshLoading">
+      <UniqueIdentifier>{ba45e4fe-49b9-46ce-8133-d52f163772df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\MeshLoasder">
+      <UniqueIdentifier>{d6ca77cb-2629-4e1c-9bfe-2791baf83c1f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Triangle.cpp">
@@ -59,9 +83,6 @@
     </ClCompile>
     <ClCompile Include="glad.c">
       <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BeforeShadeClassLearning.cpp">
-      <Filter>Source Files\BOOK</Filter>
     </ClCompile>
     <ClCompile Include="FileName.cpp">
       <Filter>Source Files\other</Filter>
@@ -93,12 +114,6 @@
     <ClCompile Include="ImageLoader.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="ShaderClassUse.cpp">
-      <Filter>Source Files\BOOK</Filter>
-    </ClCompile>
-    <ClCompile Include="Texture.cpp">
-      <Filter>Source Files\BOOK</Filter>
-    </ClCompile>
     <ClCompile Include="Exercise1_7.8.cpp">
       <Filter>Source Files\other\7.8</Filter>
     </ClCompile>
@@ -111,47 +126,77 @@
     <ClCompile Include="Exercise4_7.8.cpp">
       <Filter>Source Files\other\7.8</Filter>
     </ClCompile>
-    <ClCompile Include="VectorTransformation.cpp">
-      <Filter>Source Files\BOOK</Filter>
-    </ClCompile>
-    <ClCompile Include="UsingGlmLibrary.cpp">
-      <Filter>Source Files\BOOK</Filter>
-    </ClCompile>
     <ClCompile Include="Exercise2_8.19.cpp">
       <Filter>Source Files\From BOOK Solution\8.19</Filter>
-    </ClCompile>
-    <ClCompile Include="CoordinateSystem.cpp">
-      <Filter>Source Files\BOOK</Filter>
-    </ClCompile>
-    <ClCompile Include="LoadingCubeFirst.cpp">
-      <Filter>Source Files\BOOK</Filter>
-    </ClCompile>
-    <ClCompile Include="MultipleCube.cpp">
-      <Filter>Source Files\BOOK</Filter>
     </ClCompile>
     <ClCompile Include="allExercise.cpp">
       <Filter>Source Files\other\9.9</Filter>
     </ClCompile>
-    <ClCompile Include="LearningCamera.cpp">
-      <Filter>Source Files\BOOK</Filter>
+    <ClCompile Include="BeforeShadeClassLearning.cpp">
+      <Filter>Source Files\BOOK\Basics</Filter>
     </ClCompile>
-    <ClCompile Include="RotatingCameraInCircle.cpp">
-      <Filter>Source Files\BOOK</Filter>
-    </ClCompile>
-    <ClCompile Include="WalkAround.cpp">
-      <Filter>Source Files\BOOK</Filter>
+    <ClCompile Include="CoordinateSystem.cpp">
+      <Filter>Source Files\BOOK\Basics</Filter>
     </ClCompile>
     <ClCompile Include="DeltaTime.cpp">
-      <Filter>Source Files\BOOK</Filter>
+      <Filter>Source Files\BOOK\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="LearningCamera.cpp">
+      <Filter>Source Files\BOOK\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingCubeFirst.cpp">
+      <Filter>Source Files\BOOK\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="MultipleCube.cpp">
+      <Filter>Source Files\BOOK\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="RotatingCameraInCircle.cpp">
+      <Filter>Source Files\BOOK\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderClassUse.cpp">
+      <Filter>Source Files\BOOK\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files\BOOK\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="UsingGlmLibrary.cpp">
+      <Filter>Source Files\BOOK\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorTransformation.cpp">
+      <Filter>Source Files\BOOK\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="WalkAround.cpp">
+      <Filter>Source Files\BOOK\Basics</Filter>
     </ClCompile>
     <ClCompile Include="ZoomRotatingCamara.cpp">
-      <Filter>Source Files\BOOK</Filter>
+      <Filter>Source Files\BOOK\Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="Lighting.cpp">
+      <Filter>Source Files\BOOK\Lighting</Filter>
     </ClCompile>
     <ClCompile Include="CameraRotationAndZoom.cpp">
-      <Filter>Source Files\From BOOK Solution</Filter>
+      <Filter>Source Files\BOOK\Basics</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Excerise1_13.7.cpp">
+      <Filter>Source Files\other\13.7</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Source Files\BOOK\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Lightingmap.cpp">
+      <Filter>Source Files\BOOK\Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="LightCaster.cpp">
+      <Filter>Source Files\BOOK\Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Resource Files\MeshLoasder</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshLoding.cpp">
+      <Filter>Source Files\BOOK\MeshLoading</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -182,6 +227,9 @@
     <ClInclude Include="Camera.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Resource Files\MeshLoasder</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="FragmentShader.frag">
@@ -203,6 +251,24 @@
     </None>
     <None Include="FragmentShaderCoordinateSystem.frag">
       <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="VertexLighting.vert">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="FragmentLighting.frag">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="FragmentLightObject.frag">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="FragmentShaderMaterial.frag">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="FragmentLightingMap.frag">
+      <Filter>Resource Files\Shader\LightingMap</Filter>
+    </None>
+    <None Include="VertexLightingMap.vert">
+      <Filter>Resource Files\Shader\LightingMap</Filter>
     </None>
   </ItemGroup>
 </Project>
